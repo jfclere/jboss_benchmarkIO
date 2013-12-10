@@ -1,1 +1,1 @@
-for t in `ls 1000-*-100000-*-log.txt | sed 's/^1000-//g' | sed 's/-.*$//g' | sort | uniq`; do cat 1000-$t-100000-*-log.txt | ./mean.pl > 1000-$t-100000.dat; done
+for t in `ls 1500-*-1000000-*.com | sed 's/^1500-//g' | sed 's/-.*$//g' | sort | uniq`; do cat 1500-$t-1000000-*.com | ./mean.pl > 1500-$t-1000000.dat; done
