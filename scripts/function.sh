@@ -57,7 +57,7 @@ EOF
 	PKTS=`wc -l 1500-${t}-1000000-*.com | grep total | awk '{ print $1 }'`
 
 	# DEBUG
-        #echo "PKTS: $PKTS"
+        echo "PKTS: $PKTS"
 
 	# load in pkts/s
 	FREQ=`perl -le "print $PKTS/$T"`

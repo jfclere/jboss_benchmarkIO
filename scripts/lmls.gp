@@ -27,6 +27,6 @@ set xtics 0,1000,8000 nomirror
 # lc -> line color, we use rgb "#RRGGBB"
 # with -> style of a line, it accepts dots, points, linespoints, yerrorbars, xyerrorbars, etc.
 
-plot "undertow.dat" using 1:2:($2-$3):($2+$4) ti "undertow" ps 1.5 lw 7 lc rgb "#000000" with yerrorlines, "ngnix.dat" using 1:2:($2-$3):($2+$4) ti "ngnix" ps 1.5 lw 7 lc rgb "#900000" with yerrorlines;
+plot "undertow.dat" using 1:2:($2-$3):($2+$4) ti "undertow" ps 1.5 lw 7 lc rgb "#000000" with yerrorlines, "ngnix.dat" using 1:2:($2-$3):($2+$4) ti "ngnix" ps 1.5 lw 7 lc rgb "#900000" with yerrorlines, "httpd.dat" using 1:2:($2-$3):($2+$4)  ti "htttpd" ps 1.5 lw 7 lc rgb "#000090" with yerrorlines;
 
 

@@ -12,7 +12,8 @@ while(<STDIN>)
 	# compute the delay: time of completion - time of issuance
 	$B = $A[3] - $A[1];
 	# delay in milliseconds
-	$C = $B / 1000000;
+	#$C = $B / 1000000;
+	 $C = $B / 500000;
 	# round the delay to milliseconds
 	$D = ceil($C);
 	# increase the delay for an appropriate delay time
@@ -22,7 +23,7 @@ while(<STDIN>)
 }
 
 # for all delay values between 1 ms and 3 secs
-for($j = 1; $j < 3000; $j++) {
+for($j = 1; $j < 10000; $j++) {
 	if($numbers[$j] == "") {
 		$numbers[$j] = 0;
 	}
